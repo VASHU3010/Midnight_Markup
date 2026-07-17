@@ -6,3 +6,5 @@
     "no-inline-styles": "off"
   }
 }
+
+// It's usually a configuration file created by webhint, a tool that analyzes websites for accessibility, performance, security, and best practices.

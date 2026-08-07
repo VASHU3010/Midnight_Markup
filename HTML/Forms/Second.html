@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form creation</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>HTML FORM ALL TAGS::</legend>
+        <label for="textfield1">TextField:: </label>
+        <input type="text" name="textfield1" id="textfield1" />
+        <br />
+        <br />
+        <label for="button1">Button:: </label>
+        <input type="submit" name="button1" value="Subscribe" />
+        <br />
+        <br />
+        <label for="radio1">Radio1:: </label>
+        <input type="radio" name="radio1" id="radio1" />
+        <label for="radio2">Radio2:: </label>
+        <input type="radio" name="radio2" id="radio2" />
+        <label for="radio3">Radio1:: </label>
+        <input type="radio" name="radio3" id="radio3" />
+        <br />
+        <br />
+        <!-- Since the names are different, the browser treats them as 3 separate groups, so all three can be selected. -->
+        <!-- Attribute:: name="choice"
+       Purpose:: Groups the radio buttons together. Only one can be selected. -->
+        <label for="radio1">Male:: </label>
+        <input type="radio" name="gender" id="radio1" />
+        <label for="radio2">Female:: </label>
+        <input type="radio" name="gender" id="radio2" />
+        <label for="radio3">Prefer not to say:: </label>
+        <input type="radio" name="gender" id="radio3" />
+        <br />
+        <br />
+        <label for="checkbox1">Checkbox1:: </label>
+        <input type="checkbox" name="ENG" id="checkbox1" />
+        <label for="checkbox2">Checkbox2:: </label>
+        <input type="checkbox" name="HIN" id="checkbox2" />
+        <br />
+        <br />
+        <!-- file is used to upload file.. -->
+        <label for="fileselect1">Upload:: </label>
+        <input type="file" name="fileselect1" id="fileselect1" />
+        <br />
+        <br />
+        <label for="imageButton">Button Image:: </label>
+        <input
+          type="image"
+          name="image1"
+          id="imageButton"
+          src="Images/arrow_down.jpg"
+          alt="click here"
+          width="30px"
+          height="30px"
+        />
+        <br />
+        <br />
+        <label for="password1">Enter password::</label>
+        <input type="password" name="password1" id="password1" />
+        <br />
+        <br />
+        <label for="datepicker1">Enter Date:: </label>
+        <input type="date" name="datepicker1" id="datepicker1" />
+      </fieldset>
+    </form>
+  </body>
+</html>

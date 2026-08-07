@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Project2</legend>
+        <h1>Job Application</h1>
+        <label for="Name">Name:</label>
+        <br />
+        <input type="text" id="Name" placeholder="Enter your Name"/>
+        <br />
+        <label for="Email">Email:</label>
+        <br />
+        <input type="email" id="Email" placeholder="Enter your Email"/>
+        <br />
+        <label for="Phone">Phone:</label>
+        <br />
+        <input type="tel" id="Phone" placeholder="Enter your Phone Number"/>
+        <br />
+        <label for="Resume">Resume:</label>
+        <br />
+        <input type="file" id="Resume" />
+        <br />
+        <label for="counter">Experience (in years):</label>
+        <br />
+        <input type="number" name="counter" id="counter" min="0" max="10" placeholder="Enter Experience"/>
+        <br />
+        <fieldset>
+          <legend>Skills:</legend>
+          <input type="checkbox" name="interest" id="html" value="HTML" />
+          <label for="html">HTML</label>
+          <br />
+          <input type="checkbox" name="interest" id="css" value="CSS" />
+          <!-- id should always be different. -->
+          <label for="css">CSS</label>
+          <br />
+          <input type="checkbox" name="interest" id="js" value="JavaScript" />
+          <label for="js">JavaScript</label>
+          <br />
+        </fieldset>
+        <label for="education">Highest Education:</label>
+        <br>
+        <select id="education">
+            <option value="High School">High School</option>
+            <option value="Secondary School">Secondary School</option>
+            <option value="Graduation">Graduation</option>
+            <option value="Post Graduation">Post Graduation</option>
+        </select>
+        <br>
+        <label for="availability">Availability:</label>
+        <br>
+        <input type="checkbox" id="full-time" value="Full Time">
+        <label for="full-time">Full Time</label>
+        <br>
+        <input type="checkbox" id="part-time" value="Part Time">
+        <label for="part-time">Part Time</label>
+        <br>
+        <label for="comments">Additional Comments:</label>
+        <br />
+        <textarea name="Comments" id="comments" placeholder="Suggest your Comments"></textarea>
+        <button type="button">Apply</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,32 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <form>
+      <fieldset>
+        <legend>HTML FORM DUMMY</legend>
         <label for="email">Email::</label>
-        <input type="text" id="email" placeholder="Enter your email id"  >
-        <br>
-        <br>
+        <input type="text" id="email" placeholder="Enter your email id" />
+        <br />
+        <br />
         <label for="password">Password::</label>
-        <input type="text" id="password">
-        <br>
-        <br>
+        <input type="text" id="password" />
+        <br />
+        <br />
         <label for="datepicker">Date::</label>
-        <input type="date" id="datepicker">
-        <br>
-        <br>
-        <!-- <select name="dishes" id="selector1"> -->
-
-
-
-
+        <input type="date" id="datepicker" />
+        <br />
+        <br />
+        <label for="selector1">Choose your dishes :: </label>
+        <select name="dishes" id="selector1">
+          <option value="Maggie">Maggie</option>
+          <option value="Snacks">Snacks</option>
+          <option value="chips">Chips</option>
         </select>
-        <input type="submit" value="Click here">
+        <br />
+        <br />
+        <!-- <select name="dishes" id="selector1"> -->
+        <input type="submit" value="Click here" />
         <button type="button">Click here</button>
+        <br />
+        <br />
+        <textarea
+          name="textarea1"
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="enter the text here...."
+        ></textarea>
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>

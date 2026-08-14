@@ -41,6 +41,6 @@ Assets
 
 ## Contributions
 
-This is a personal learning repository, but suggestions and feedback are always welcome.
+This is a personal learning repository, but suggestions and feedback are always welcome..
 
 **"Stay curious. Keep building. Never stop learning."** 

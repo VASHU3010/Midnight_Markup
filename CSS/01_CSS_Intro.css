@@ -1,0 +1,51 @@
+/* Cascading style sheet [CSS]
+What is CSS?
+What is HTML? - Provides a skeleton , structure, description and semantics to our web page.
+
+But when we have to work on apprearance work of our web page - It is done by CSS. 
+- Styling and Apperance -
+
+We have properties, which we assign to the document like value , bg-color, color, border.
+
+What is Cascading?
+in the same place , we assign different properties like in a <p> tag we assign 3 different properties.
+
+Ques- What are the four factors on which Cascinding works ?
+1. Relevance of origin and importance
+2. Specificity
+3. Source order
+4. Inheritance
+
+Different methodds to add CSS to our webpage :: 
+1. Inline
+2. Internal
+3. External
+
+Steps to follow to use External CSS ::
+1. You need to make a external css file.
+2. you need to link that external file to the html file.
+*/
+
+h1{
+    font-size: small;
+    text-align: center;
+}
+p{
+    color: aquamarine;
+}
+
+
+/* What is Selector?
+we can target any html element and apply css to it , as we want.
+or we can target multiple elements.
+
+Type of Selectors ::
+1. element - p, h1, article, section, h2, etc.
+
+2. id - #abc ,, id="abc"
+
+3. class - class="abccd" , bhut saare elements ki same class ho skti hai !! anddd .abccd
+
+4. group - p,article  ,, grouping multiple elements using colon
+
+*/

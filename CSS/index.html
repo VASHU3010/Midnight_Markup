@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- Internal CSS :: -->
+    <style>
+        h1{ 
+            /* selector :: h1 element ke lie , color property ke andr green assigned value. */
+            color: green;
+        }
+        p{
+            background-color: purple;
+        }
+    </style>
+    <!-- External CSS ::  -->
+     <link rel="stylesheet" href="01_CSS_Intro.css">
+</head>
+<body>
+    <h1>Welcome to CSS Tutorial.!</h1>
+
+    <!--INLINE CSS :: -->
+
+    <p style="background-color: yellow;">Lorem ipsum dolor sit amet.</p>
+
+    <p style="color: aqua;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, voluptate.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, modi asperiores? Commodi nesciunt, unde nostrum modi odio accusamus, fuga repudiandae corrupti vel assumenda autem nam delectus eius explicabo provident. Hic, distinctio aliquam cum quibusdam soluta totam quia natus labore excepturi cumque asperiores atque!</p>
+    <footer>
+        I am footer.
+    </footer>
+    
+</body>
+</html>
+
+<!-- Inline CSS will be priortize in the Internal CSS and Inline CSS.
+ BUT 
+ if you want to applu the internal css , you only need to add "!important" after specifying the property. -->
+
+ <!-- If we see order-wise, properties will be applied accordingly.  -->

@@ -1,0 +1,25 @@
+p{
+    background-color: red;
+    color: white;
+}
+article{
+    color: pink;
+    background-color: purple;
+}
+
+#p1{
+    background-color: beige;
+    color: navy;
+}
+
+.ar1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p,h1{
+    width: 500px;
+}
+
+article.ar1{
+    text-align: center;
+}

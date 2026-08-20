@@ -96,6 +96,8 @@ let truthyyy = (true || 3)
 // | 1 | 0 | 0       |
 // | 1 | 1 | 1       |
 
+console.log(2 & 5)
+
 // 2. OR TRUTH TABLE ::
 
 // | A | B | A OR B |
@@ -105,12 +107,19 @@ let truthyyy = (true || 3)
 // | 1 | 0 | 1      |
 // | 1 | 1 | 1      |
 
+console.log(2 | 5)
+
 // 3. NOT TRUTH TABLE ::
 
 // | A | NOT A |
 // | - | ----- |
 // | 0 | 1     |
 // | 1 | 0     |
+
+console.log( ~0 ) // it will give answer as -1 BECAUSE most/left significant bit is 1 then he number is negative -
+// and we take 2's compliment == 1's compliment + 1
+// 1's compliment is flipping whole number.
+// But if the RIGHT MOST BIT OR LEASE SIGNIFICANT BIT is 1 then the number is positive.
 
 // 4. XOR TRUTH TABLE ::
 
@@ -120,6 +129,17 @@ let truthyyy = (true || 3)
 // | 0 | 1 | 1       |
 // | 1 | 0 | 1       |
 // | 1 | 1 | 0       |
+
+// LEFT SHIFT ::
+
+console.log(5 << 1) //Shift 5 by 1 place.
+// 5 left shift by 2 == 5*2*2
+// 5 left shift by 4 == 5*(2)^4
+
+// RIGHT SHIFT ::
+
+console.log(10 >> 2) //Shift 2 by 5 digit in right.
+// 10 right shift by 2 == 10/(2)^2
 
 
 

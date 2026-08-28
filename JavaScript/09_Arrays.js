@@ -126,24 +126,48 @@ console.log(answer)
 // current :: the first element from the array , it will take but if that value is taken by accumulator then it will move forward to 2nd one element.
 
 let arr9 = [10, 20, 30, 40, 50]
-let answer1 = arr.reduce((acc, curr) => {
+let answer1 = arr9.reduce((acc, curr) => {
     return acc + curr
 }, 0) // Accumulator value is assigned to 0 
-// and then 0+10 = 10; current == 10;
+// and then 0+10 = 10; in array == 10; and current value shifted to 20 , index 1!
 console.log(arr9)
 console.log(answer1)
 
 // sort
 
-console.log(brr)
+let arr15 = [25, 9, 8, 0, 45, 100]
+arr15.sort()
+console.log(arr15)
+// it sorts based on the first character
 
-// indexOf
+// If you want numerical sorting , Use a compare function: [a - b ]
 
-console.log(brr)
+arr15.sort((a, b) => a - b)
+console.log(arr15)
 
-// find
+// for reverse :: 
 
-console.log(brr)
+arr15.sort((b, a) => a - b )
+console.log(arr15)
+
+// OR
+
+arr15.reverse()
+console.log(arr15)
+
+// indexOf ::value is present on which index can be find out indexOf.. 
+
+console.log(arr15.indexOf(100))
+// indexOf() returns -1 when the value you're searching for does not exist in the array.
+
+// find :: find() is used to find the first element in an array that satisfies a condition.
+
+let arr88 = [45, 455, 70, 60]
+let answer2 = arr88.find((value) => {
+    return value > 80
+})
+console.log(answer2)
+
 
 
 

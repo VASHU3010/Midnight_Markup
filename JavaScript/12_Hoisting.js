@@ -52,3 +52,11 @@ sayHello()
 let sayHello = function(){
     console.log(sayHello)
 }
+
+
+// CLASS HOISTING :: it's not possible , as it will give you the reference error. 
+
+const obj1 = new human()
+class human {
+
+}

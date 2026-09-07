@@ -60,3 +60,5 @@ const obj1 = new human()
 class human {
 
 }
+
+

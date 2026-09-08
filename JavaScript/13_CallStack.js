@@ -71,3 +71,7 @@ console.log(greet)
 let greet2 = function(){
     console.log("hello")
 }
+
+let greet3 = function() {
+    console.log("hello")
+}

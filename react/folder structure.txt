@@ -1,0 +1,233 @@
+React Folder Structure
+
+1. node_modules ::
+
+Whatever packages and dependencies we need to start and work with React are installed and stored inside the "node_modules" folder.
+
+When we install new packages in the future, they will also be stored inside "node_modules".
+
+We normally don't make changes directly inside this folder.
+
+2. public Folder ::
+
+The "public" folder contains static files that we want to access directly in our project.
+
+These files are served directly by the browser and are not processed by Vite like the files inside the "src" folder.
+
+3. "src" Folder ::
+
+The "src" folder contains the main code of our React application.
+
+It contains ::
+
+* JavaScript files
+* JSX files
+* CSS files
+* Components
+* Other files required for our application
+
+Components are commonly written in ".jsx" files.
+
+NOTE :: Not every React component has to be a ".jsx" file. Components can also be written in ".js" or ".tsx".
+
+Most of our actual development work happens inside the "src" folder.
+
+4. "assets" Folder ::
+
+The "assets" folder is generally used to store files that are part of our application, such as ::
+
+* Images
+* Videos
+* Icons
+* Fonts
+* Other media files
+
+In a Vite React project, "assets" is usually inside the "src" folder.
+
+How to Run the Project ::
+
+To run the React development server, we use ::
+npm run dev
+
+This starts the Vite development server and gives us a "localhost link".
+
+We can open that link in the browser to see our React application.
+
+5. "vite.svg" ::
+
+It is the default Vite logo that comes with a Vite React project.
+
+If it is inside the "public" folder, we can access it directly using its path.
+
+For example :: 
+
+jsx
+<img src="/vite.svg" />
+
+This is possible because files inside the "public" folder are served directly.
+
+6. ".gitignore" ::
+
+When we work with Git and push our project to GitHub, we don't always want to push every file and folder.
+
+For example, we normally don't want to push ::
+
+* "node_modules"
+* Environment files containing sensitive information
+* Build files
+* Other unnecessary files
+
+For this, we use the ".gitignore" file.
+
+It tells Git which files and folders should be ignored and should not be tracked.
+
+7. "index.html"
+
+"index.html" is the main HTML file of our Vite React project.
+
+Inside the "<body>" tag, we have ::
+
+html
+<div id="root"></div>
+
+The "root" element is important because React uses it as the place where our React application will be rendered.
+
+The "index.html" file also includes our "main.jsx" file ::
+
+<script type="module" src="/src/main.jsx"></script>
+
+This connects our HTML file with our React JavaScript code.
+
+8. "main.jsx" ::
+
+"main.jsx" is the entry point of our React application.
+
+It targets the element with the `root` ID from "index.html" ::
+
+document.getElementById('root')
+
+Then React renders our application inside that element.
+
+For example ::
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <App />
+)
+
+Here ::
+
+* `document.getElementById('root')` → finds the `root` element in `index.html`
+* `createRoot()` → creates the React root
+* `.render()` → tells React what to render
+* `<App />` → our main React component
+
+"App.jsx" :: 
+
+"App.jsx" usually contains the main component of our React application.
+
+It contains the main UI of our application and can use other components inside it.
+
+For example ::
+
+function App() {
+  return (
+    <div>
+      <h1>Hello React</h1>
+    </div>
+  )
+}
+
+export default App
+
+The "App" component is then rendered by "main.jsx".
+
+When we inspect the original "index.html", we won't see all our React code directly inside the "root" div.
+
+React uses the "root" div as the mounting point and creates/manages the UI inside it.
+
+9. "package.json" ::
+
+It contains important information about our project.
+
+It includes ::
+
+* Project name
+* Project version
+* Dependencies
+* Development dependencies
+* Scripts
+* Other project information
+
+The "scripts" section contains commands that help us perform different tasks.
+
+For example ::
+
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview"
+}
+
+We can run these commands using ::
+
+npm run dev
+npm run build
+npm run lint
+npm run preview
+
+The "dev" command starts the development server.
+
+The "build" command creates a production build of our application.
+
+The "dependencies" section contains packages that our application needs to run.
+
+10. "package-lock.json" ::
+
+"package-lock.json" contains detailed information about the exact versions of the packages and dependencies installed in our project.
+
+It helps ensure that the same dependency versions can be installed when the project is set up on another system.
+
+We generally don't manually edit this file.
+
+It is automatically updated when we install or update packages using npm.
+
+11. "README.md" ::
+
+"README.md" is a documentation file for our project.
+
+It usually contains information such as ::
+
+* Project description
+* How to install the project
+* How to run the project
+* Features
+* Technologies used
+* Other useful information
+
+It helps other developers understand the project quickly.
+
+12. vite.config.js ::
+
+vite.config.js is the configuration file for Vite.
+
+It is used to configure how Vite works with our project.
+
+For a React project, it can include the React plugin that helps Vite work with React.
+
+For example ::
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+})
+
+So, `vite.config.js` is **not itself a plugin**. It is the **configuration file where we configure Vite and its plugins**.
+
+Main Point ::
+
+The "src" folder is where most of our actual development work happens.
+
+This is where we create our React components, JavaScript/JSX code, CSS, assets, and other application-related files.
